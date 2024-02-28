@@ -10,10 +10,15 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
     "@tauri-apps/api": ">=2.0.0-beta.0",
     "@tauri-apps/plugin-shell": ">=2.0.0-beta.0",
+    "mayo-logger": "^1.3.2",
+    "mobx": "^6.12.0",
+    "mobx-react-lite": "^4.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tauri-plugin-store-api": "^0.0.0",
     "zustand": "^4.5.1"
   },
   "devDependencies": {

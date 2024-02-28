@@ -1,0 +1,16 @@
+[
+  {"name": "البقرة", "start": 2, "end": 2, "section": "sourates" },
+  {"name": "آل عمران", "start": 3, "end": 3, "section": "sourates"},
+  {"name": "الكهف", "start": 18, "end": 18, "section": "sourates"},
+  {"name": "مريم", "start": 19, "end": 19, "section": "sourates"},
+  {"name": "يس", "start": 36, "end": 36, "section": "sourates"},
+  {"name": "حزب سبح", "start": 87, "end": 114, "section": "otherDivisions"},
+  {"name": "جزء عمّ", "start": 78, "end": 114, "section": "otherDivisions"},
+  {"name": "جزء تبارك", "start": 67, "end": 77, "section": "otherDivisions"},
+  {"name": "المفصّل", "start": 50, "end": 114, "section": "otherDivisions"},
+  {"name": "الربع الأول", "start": 1, "end": 6, "section": "quarters"},
+  {"name": "الربع الثاني", "start": 7, "end": 16, "section": "quarters"},
+  {"name": "الربع الثالث", "start": 17, "end": 39, "section": "quarters"},
+  {"name": "الربع الرابع", "start": 40, "end": 114, "section": "quarters"},
+  {"name": "حافظ", "h": "👑", "start": 1, "end": 114, "section": "all", "default": true}
+]
