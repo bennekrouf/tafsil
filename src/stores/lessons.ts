@@ -24,7 +24,7 @@ class LessonStore {
 
       // const url = `${process.env.DOMAIN}/similars/${chapterNo}?ranges=${convertIndicesToRanges(indices)}`;
       // const url = `http://test.similar.mayorana.ch/similars/${chapterNo ?? 2}?ranges=${convertIndicesToRanges(indices)}`;
-      const url='http://test.similar.mayorana.ch/similars/90?ranges=90-114';
+      const url='http://test.similar.mayorana.ch/similars/2?ranges=2-114';
     
       Logger.info(`Fetching lessons from the API...`, null, { tag: 'loadLessons' });
       const response = await fetch(url);

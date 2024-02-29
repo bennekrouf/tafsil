@@ -107,3 +107,19 @@ button {
     background-color: #0f0f0f69;
   }
 }
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed */
+}
+
+.content {
+  padding-top: 60px; /* Adjust according to your header height */
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}

@@ -18,8 +18,7 @@
     "mobx-react-lite": "^4.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tauri-plugin-store-api": "^0.0.0",
-    "zustand": "^4.5.1"
+    "tauri-plugin-store-api": "^0.0.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": ">=2.0.0-beta.0",

@@ -8,15 +8,15 @@ import { writeToCache } from '../database/writeToCache';
 
 export const useFetchUser = <T extends UserState>(initialState: T): [T, (data: T) => Promise<any>, boolean] => {
   const [userSettings, setUserSettings] = useState<T>(initialState);
-  const [isLoading, setLoading] = useState(false);
+  const [isUserLoading, setUserLoading] = useState(false);
 
   useEffect(() => {
     const user = { email: "mohamed.bennekrouf@gmail.com" };
-    if (!user) return; // Ensure user exists before proceeding with fetching data
-
+    if (!user) return;
+    
     const loadData = async () => {
       try {
-        setLoading(true);
+        setUserLoading(true);
         let savedState: T | null = await loadFromCache(user.email);
         if (!savedState) {
           savedState = (await loadFromSupa() as unknown) as T;
@@ -35,7 +35,7 @@ export const useFetchUser = <T extends UserState>(initialState: T): [T, (data: T
         console.error('Failed to fetch the data from storage', error);
         setUserSettings(initialState);
       } finally {
-        setLoading(false);
+        setUserLoading(false);
       }
     };
 
@@ -62,5 +62,5 @@ export const useFetchUser = <T extends UserState>(initialState: T): [T, (data: T
     }
   };
 
-  return [userSettings, updateUserSettings, isLoading];
+  return [userSettings, updateUserSettings, isUserLoading];
 };
